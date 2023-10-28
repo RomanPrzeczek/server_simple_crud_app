@@ -19,14 +19,18 @@ const DEFAULT_STORAGE_PATH = path.join(__dirname, "storage", "items.json");
 
 const storageItemsLimit = 10;
 
+const PORT = process.env.PORT || 8000;
+
 // Creating of Express application
 app.use(cors());
 app.use(express.json());
 
 //Starting of server
-app.listen(8000, () => {
+app.listen(PORT, () => {console.log(`App listening on port ${PORT}!`); });
+
+/* app.listen(8000, () => {
     console.log(`Server is running on port 8000.`);
-});
+}); */
 
 
 //GETTERS

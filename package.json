@@ -8,7 +8,7 @@
   "main": "AllInOne.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon AllInOne.js"
+    "start": "node AllInOne.js"
   },
   "keywords": [],
   "author": "",

@@ -28,6 +28,17 @@ app.use(express.json());
 //Starting of server
 app.listen(PORT, () => {console.log(`App listening on port ${PORT}!`); });
 
+/* app.get("/*",function(req,res){
+    res.sendFile(
+        path.join(__dirname,"./client_simple_crud_app/public/index.html"),
+        function(err){
+            if(err){
+                res.status(500).send(err);
+            }
+        }
+    );
+}); */
+
 /* app.listen(8000, () => {
     console.log(`Server is running on port 8000.`);
 }); */
